@@ -3,7 +3,7 @@
 /* *************************** */
 
 header {
-  margin-bottom: 9rem;
+	margin-bottom: 9rem;
 }
 
 /* ? NAVIGATION STYLE */
@@ -12,7 +12,7 @@ header {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: 3.2rem;
+	padding: 4rem 3.2rem;
 }
 
 .nav_container h3 {
@@ -41,8 +41,9 @@ header {
 
 .banner_container__content-01 {
 	display: grid;
-	grid-template-columns: 0.6fr 0.4fr;
-  padding: 3rem 0 6rem;
+	grid-template-columns: 0.56fr 0.44fr;
+	padding: 4rem 0 8rem;
+	align-items: center;
 }
 
 .banner_container h1 {
@@ -52,19 +53,13 @@ header {
 	text-transform: capitalize;
 }
 
-.banner_container__content-01 figure:nth-child(2) {
-	background: url("../Images/hero-banner-02.jpeg") no-repeat center;
-	background-size: cover;
-	aspect-ratio: 0.994;
-  grid-row: auto / span 2;
+.banner_container__content--01 figure:nth-child(2) {
+	grid-row: auto / span 2;
 }
 
-.banner_container__content-01 figure:nth-child(3) {
-	aspect-ratio: 2;
-	width: 75%;
-	background: url("../Images/hero-banner-01.jpeg") no-repeat center;
-	background-size: cover;
-  margin-top: auto;
+.banner_container__content--01 figure:nth-child(3) {
+	width: 85%;
+	align-self: end;
 }
 
 .banner_container__content-02 {
@@ -72,13 +67,36 @@ header {
 }
 
 .banner_container__content-02 p {
-  max-width: 63rem;
-  margin-left: auto;
+	max-width: 63rem;
+	margin-left: auto;
 }
 
 /* *************************** */
 /* * MAIN COMPONENTS */
 /* *************************** */
+
+/* ? INTRODUCTION SECTION */
+
+.introduction_container {
+	display: grid;
+	grid-template-columns: 0.6fr 0.4fr;
+	align-items: center;
+	background: var(--SECTION-BG);
+}
+
+.introduction_container figure {
+	aspect-ratio: 1.92;
+	background: url("../Images/hero-banner-03.jpeg") no-repeat center;
+	background-size: cover;
+}
+
+.introduction_container h2 {
+	font-size: 5rem;
+	color: var(--WHITE-FONT);
+	max-width: 66rem;
+	margin: 0 auto;
+}
+
 /* *************************** */
 /* * FOOTER COMPONENTS */
 /* *************************** */
