@@ -34,11 +34,16 @@ button {
 
 img {
 	width: 100%;
+	display: flex;
 }
 
 a {
 	text-decoration: none;
 	color: var(--HIGHLIGHT-DARK);
+}
+
+ul {
+	list-style: none;
 }
 
 /* ? COMMON STYLE RULES */
@@ -65,15 +70,37 @@ a {
 }
 
 .content--title {
-  font-size: var(--SECONDARY-FONT);
-  font-weight: 400;
-  font-family: var(--FREDOKA-FONT);
+	font-size: var(--SECONDARY-FONT);
+	font-weight: 400;
+	font-family: var(--FREDOKA-FONT);
+	text-transform: capitalize;
 }
 
 .content--summary {
 	font-size: var(--CONTENT-FONT);
-  line-height: 1.8;
-  font-weight: 400;
-  font-family: var(--KUMAR-FONT);
+	line-height: 1.8;
+	font-weight: 400;
+	font-family: var(--KUMAR-FONT);
 }
 
+.btn {
+	font-family: var(--KUMAR-FONT);
+	font-size: var(--DETAIL-FONT);
+	color: var(--WHITE-FONT);
+	padding: 1.4rem 2.4rem;
+	background: var(--HIGHLIGHT-DARK);
+	font-weight: 300;
+}
+
+.product--title {
+	font-size: 3rem;
+	text-transform: capitalize;
+	font-family: var(--FREDOKA-FONT);
+	font-weight: 400;
+}
+
+.container--flex {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
