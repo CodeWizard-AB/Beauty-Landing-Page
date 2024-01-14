@@ -11,12 +11,6 @@
 	padding: 4rem 3.2rem;
 }
 
-.nav_container h3 {
-	font-family: var(--FREDOKA-FONT);
-	font-size: 3.6rem;
-	font-weight: 400;
-}
-
 .nav_container__links {
 	font-family: var(--KUMAR-FONT);
 	display: flex;
@@ -93,6 +87,10 @@ main section {
 	max-width: 55rem;
 }
 
+.about_container__content p {
+	margin: 3rem 0 2.2rem;
+}
+
 .about_container figure {
 	background: var(--SECTION-BG);
 }
@@ -164,6 +162,10 @@ main section {
 
 /* ? PRODUCT DISPLAYS SECTION */
 
+.display {
+	margin: 10rem 0 0 0;
+}
+
 .display h3 {
 	font-size: 2.8rem;
 	font-family: var(--KUMAR-FONT);
@@ -174,3 +176,25 @@ main section {
 /* *************************** */
 /* * FOOTER COMPONENTS */
 /* *************************** */
+
+footer {
+	padding: 10rem 0;
+	font-family: var(--KUMAR-FONT);
+}
+
+.footer_container--01__socail-links figure img {
+	max-width: 1.8rem;
+}
+
+footer ion-icon {
+	width: 3rem;
+	height: 3rem;
+	margin: 4rem 2rem 1.6rem 0;
+}
+
+.footer_container--01__socail-links figure {
+	grid-column: auto / span 3;
+	justify-content: flex-start;
+	font-size: 1.8rem;
+	gap: 0.5rem;
+}

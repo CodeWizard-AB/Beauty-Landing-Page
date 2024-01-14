@@ -54,6 +54,12 @@ ul {
 	padding: 0 3.2rem;
 }
 
+.brand-logo {
+	font-family: var(--FREDOKA-FONT);
+	font-size: 3.6rem;
+	font-weight: 400;
+}
+
 .highlight--light {
 	column-rule: var(--SECTION-BG);
 	font-weight: 300;
