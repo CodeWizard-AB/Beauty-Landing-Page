@@ -96,6 +96,7 @@ ul {
 	padding: 1.4rem 2.4rem;
 	background: var(--HIGHLIGHT-DARK);
 	font-weight: 300;
+	letter-spacing: 1px;
 }
 
 .product--title {
