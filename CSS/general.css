@@ -1,0 +1,78 @@
+/* ? GENERAL STYLE RULES */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	background: var(--BODY-BG);
+	font-size: 62.5%;
+	color: var(--HIGHLIGHT-DARK);
+}
+
+:root {
+	--KUMAR-FONT: "Kumbh Sans", sans-serif;
+	--FREDOKA-FONT: "Fredoka", sans-serif;
+	--HIGHLIGHT-DARK: #121212;
+	--HIGHLIGHT-LIGHT: #414141;
+	--SECTION-BG: #b9a294;
+	--BODY-BG: #fff7ef;
+	--WHITE-FONT: #f9f9f9;
+	--SECONDARY-FONT: 6rem;
+	--CONTENT-FONT: 2.4rem;
+	--DETAIL-FONT: 2.6rem;
+	--HEADING-FONT: 7rem;
+}
+
+button {
+	background: transparent;
+	border: none;
+	cursor: pointer;
+}
+
+img {
+	width: 100%;
+}
+
+a {
+	text-decoration: none;
+	color: var(--HIGHLIGHT-DARK);
+}
+
+/* ? COMMON STYLE RULES */
+
+.container {
+	max-width: 132rem;
+	margin: 0 auto;
+	padding: 0 3.2rem;
+}
+
+.highlight--light {
+	column-rule: var(--SECTION-BG);
+	font-weight: 300;
+}
+
+.highlight--thin {
+	font-weight: 300;
+}
+
+.secondary--heading {
+	font-size: var(--SECONDARY-FONT);
+	font-weight: 400;
+	text-transform: capitalize;
+}
+
+.content--title {
+  font-size: var(--SECONDARY-FONT);
+  font-weight: 400;
+  font-family: var(--FREDOKA-FONT);
+}
+
+.content--summary {
+	font-size: var(--CONTENT-FONT);
+  line-height: 1.8;
+  font-weight: 400;
+  font-family: var(--KUMAR-FONT);
+}
