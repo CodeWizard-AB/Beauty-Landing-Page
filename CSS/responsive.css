@@ -90,4 +90,9 @@
 		justify-self: start;
 		width: 75%;
 	}
+
+	.display_container__figures figure img {
+		gap: 2rem;
+		min-width: 185px;
+	}
 }
