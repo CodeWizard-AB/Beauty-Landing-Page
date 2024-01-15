@@ -26,8 +26,23 @@
 	gap: 3rem;
 }
 
-.menu_btn {
+.nav_mobile-btn {
 	display: none;
+}
+
+.nav_container__links li::after {
+	content: "";
+	border: 1px solid var(--SECTION-BG);
+	display: block;
+	width: 0;
+	opacity: 0;
+	transition: all 0.5s ease-in-out;
+	margin-top: 0.5rem;
+}
+
+.nav_container__links li:hover::after {
+	opacity: 1;
+	width: 100%;
 }
 
 /* ? HERO BANNER STYLE */
@@ -148,10 +163,32 @@ main section {
 	font-weight: 400;
 	padding: 2.5rem 0;
 	border-bottom: 1px solid var(--SECTION-BG);
+	position: relative;
 }
 
 .collection_container__content ul li:first-child {
 	border-top: 1px solid var(--SECTION-BG);
+}
+
+.collection_container__content ul > li::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: linear-gradient(
+		270deg,
+		#b9a294 5.72%,
+		rgba(255, 247, 239, 0) 108.48%
+	);
+	width: 0;
+	height: 100%;
+	transition: all 0.5s ease-in-out;
+	opacity: 0;
+}
+
+.collection_container__content ul > li:hover::after {
+	opacity: 1;
+	width: 100%;
 }
 
 /* ? CTA SECTION */

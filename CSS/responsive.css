@@ -1,11 +1,11 @@
 /* * MOBILE DEVICE / SMALLER DEVICE */
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 576px) {
 	html {
 		font-size: 50%;
 	}
 
-	.container--flex:not(footer .container--flex, .display_container__figures) {
+	.container--flex:not(footer .container--flex) {
 		flex-direction: column;
 		justify-content: center;
 		gap: 4rem;
@@ -20,13 +20,58 @@
 
 	/* ? NAVIGATION SECTION */
 
-	.nav_container__links,
-	.nav_container__buttons {
+	.nav_mobile-btn {
+		z-index: 100;
+		display: block;
+	}
+
+	.nav_container__buttons,
+	.close_btn {
 		display: none;
 	}
 
-	.menu_btn {
+	.nav_container__links {
+		font-size: 4rem;
+		position: absolute;
+		background-color: #fff7ef86;
+		backdrop-filter: blur(10px);
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		transform: translateX(100%);
+		transition: all 0.3s ease-out;
+		opacity: 0;
+	}
+
+	.nav_container__buttons {
+		display: flex;
+		position: absolute;
+		bottom: 15%;
+		left: 50%;
+		opacity: 0;
+		transform: translateX(-50%);
+	}
+
+	.nav--open .nav_container__buttons {
+		transition: all 2s;
+		opacity: 1;
+	}
+
+	.nav--open .nav_container__links {
+		opacity: 1;
+		transform: translateX(0);
+	}
+
+	.nav--open .close_btn {
 		display: block;
+	}
+
+	.nav--open .menu_btn {
+		display: none;
 	}
 
 	/* ? BANNER SECTION */
@@ -39,8 +84,12 @@
 	}
 
 	.banner_container__content--01 h1 {
-		font-size: 4rem;
+		font-size: 5rem;
 		text-align: center;
+	}
+
+	.content--title {
+		font-size: 60px;
 	}
 
 	/* * MAIN COMPONENTS */
