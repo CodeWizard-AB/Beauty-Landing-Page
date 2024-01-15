@@ -149,16 +149,23 @@
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
 		gap: 2rem 0;
-		justify-items: start;
+		align-items: start;
+	}
+
+	.brand-logo {
+		font-size: 4rem;
 	}
 
 	.nav_container__links {
-		justify-self: center;
-		grid-area: 2 / 1 / 2 / 3;
+		align-self: end;
+		gap: 4rem;
 	}
 
 	.nav_container__buttons {
-		justify-self: end;
+		justify-self: center;
+		grid-column: auto / span 2;
+		display: flex;
+		gap: 5rem;
 	}
 
 	.content--title {
@@ -211,7 +218,6 @@
 		gap: 8rem;
 		align-items: center;
 		text-align: center;
-
 	}
 
 	.about_container__content p {
@@ -249,7 +255,7 @@
 	}
 
 	.container {
-		padding-left: 8rem;
-		padding-right: 8rem;
+		padding-left: 6rem;
+		padding-right: 6rem;
 	}
 }
