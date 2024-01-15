@@ -201,6 +201,11 @@
 		margin: 0 auto;
 	}
 
+	.introduction_container h2 {
+		font-size: 4rem;
+		padding-left: 8rem;
+	}
+
 	.about_container {
 		flex-direction: column;
 		gap: 8rem;
